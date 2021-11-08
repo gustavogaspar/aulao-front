@@ -12,18 +12,26 @@
     <form class="form" method="POST" target="__self">
         <fieldset>
             <h1> Student Form </h2>
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
-            <input type="button" id="submit" value="Submit">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="button" id="submit" value="Submit">
         </fieldset>
     </form>
 </body>
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="src/script.js"></script>
+<script>
+    window.apmrum = (window.apmrum || {});
+    window.apmrum.serviceName = 'studentRegistrationForm';
+    window.apmrum.webApplication = 'StudentRegistry';
+    window.apmrum.ociDataUploadEndpoint = 'https://aaaac7hrlrc7saaaaaaaaaayre.apm-agt.us-ashburn-1.oci.oraclecloud.com';
+    window.apmrum.OracleAPMPublicDataKey = 'DIZBCJU6DBOIPEGP5IFGBYJ4U4RWHQFW';
+</script>
+<script async crossorigin="anonymous" src="https://aaaac7hrlrc7saaaaaaaaaayre.apm-agt.us-ashburn-1.oci.oraclecloud.com/static/jslib/apmrum.min.js"></script>
 
 </html>
